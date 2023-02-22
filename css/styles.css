@@ -1,22 +1,35 @@
+:root {
+    --header-color:#FFFFFF;
+}
 .list {
     list-style: none;
 }
 .link {
     text-decoration: none;
 }
-.body {
+body {
     font-family: 'Roboto', sans-serif;
+    background-color:var(--header-color);
     color: #434455;
 }
-
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /* =========================COMPONENTS=========================*/
 .logo-component {
     font-family: 'Raleway',sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -30,11 +43,10 @@
     color: #2E2F42;
 }
 .btn-component {
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     cursor: pointer;
 }
@@ -51,6 +63,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: #434455;
 }
 
 /* =========================/COMPONENTS=========================*/
@@ -78,17 +91,16 @@
 /* ==========================/HEADER======================== */
 
 /* ==========================ADDRESS========================*/
-.mail-link,
-.phone-number {
+.address-link {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
 }
-.mail-link:hover,
-.mail-link:focus {
+.address-link:hover,
+.address-link:focus {
     color: #4D5AE5
 }
 /* ==========================/ADDRESS========================*/
@@ -100,15 +112,18 @@
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--header-color); 
 }
 .hero-btn {
     background-color: #4D5AE5;
-    color: #FFFFFF;
+    color: var(--header-color);
 }
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #404BBF;
+}
+.hero {
+    background-color: #2E2F42;
 }
 /* ==========================/HERO========================*/
 
@@ -130,6 +145,12 @@
     letter-spacing: 0.02em;    
     color: #2E2F42;
 }
+.team {
+    background-color: #F4F4FD;
+}
+.team-card {
+    background-color: #FFFFFF;
+}
 /* =========================/TEAM=========================*/
 
 
@@ -141,6 +162,9 @@
     letter-spacing: 0.02em;    
     color: #E7E9FC;
 }
+.footer {
+    background-color:#2E2F42;
+}
 /* =========================/FOOTER=========================*/
 
 
@@ -148,9 +172,16 @@
 .port-btn:hover,
 .port-btn:focus {
     background-color: #404BBF;
-    color: #FFFFFF;
+    color: var(--header-color);
 }
 .port-btn {
     background-color: #E7E9FC;
     color: #4D5AE5;
+}
+
+/* =========================/PORTFOLIO-NAV=========================*/
+
+/* =========================PORTFOLIO-STUDIO=========================*/
+.card {
+    color: #E7E9FC;
 }
