@@ -1,5 +1,21 @@
 :root {
-    --header-color:#FFFFFF;
+    --primery-font:'Roboto', sans-serif;
+    --acent-color:#FFFFFF;
+    --title-color:#2E2F42;
+    --text-color:#434455;
+    --secondary-logo-color:#4D5AE5;
+    --link-color:#4D5AE5;
+    --background-btn-hero:#4D5AE5;
+    --hover-focus-btn:#404BBF;
+    --background-hero:#2E2F42;
+    --backgorund-team:#F4F4FD;
+    --background-footer:#2E2F42;
+    --footer-text:#E7E9FC;
+    --potfolio-btn-back:#E7E9FC;
+    --potfolio-btn-focus-back:#404BBF;
+    --potfolio-btn-color:#4D5AE5;
+    --portfoli-staff-card:#E7E9FC;
+    
 }
 .list {
     list-style: none;
@@ -8,8 +24,8 @@
     text-decoration: none;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color:var(--header-color);
+    font-family: var(--primery-font);
+    background-color: var(--acent-color);
     color: #434455;
 }
 .visually-hidden {
@@ -40,7 +56,7 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--text-color);
 }
 .btn-component {
     font-family: 'Roboto', sans-serif;
@@ -56,14 +72,14 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--title-color);
 }
 
 .about-text-comp {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color:var(--text-color);
 }
 
 /* =========================/COMPONENTS=========================*/
@@ -71,10 +87,10 @@ body {
 
 /* ==========================HEADER======================== */
 .logo {  
-    color: #2E2F42;
+    color: var(--title-color);
 }
 .logo-web { 
-    color: #4D5AE5;
+    color: var(--secondary-logo-color);
 }
 
 .menu-link {
@@ -82,11 +98,11 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--logo-color);
 }
 .menu-link:hover,
 .menu-link:focus {
-    color: #4D5AE5;
+    color: var(--link-color);
 }
 /* ==========================/HEADER======================== */
 
@@ -97,11 +113,11 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
 .address-link:hover,
 .address-link:focus {
-    color: #4D5AE5
+    color:var(--link-color);
 }
 /* ==========================/ADDRESS========================*/
 
@@ -112,18 +128,18 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--header-color); 
+    color: var(--acent-color); 
 }
 .hero-btn {
-    background-color: #4D5AE5;
-    color: var(--header-color);
+    background-color:var(--background-btn-hero);
+    color: var(--acent-color);
 }
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #404BBF;
+    background-color: var(--hover-focus-btn);
 }
 .hero {
-    background-color: #2E2F42;
+    background-color: var(--background-hero);
 }
 /* ==========================/HERO========================*/
 
@@ -135,7 +151,7 @@ body {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--title-color);
 }
 .team-prof {
     font-weight: 500;
@@ -143,13 +159,13 @@ body {
     line-height: 1.2;    
     text-align: center;
     letter-spacing: 0.02em;    
-    color: #2E2F42;
+    color: var(--title-color);
 }
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--backgorund-team);
 }
 .team-card {
-    background-color: #FFFFFF;
+    background-color:var(--acent-color);
 }
 /* =========================/TEAM=========================*/
 
@@ -160,10 +176,10 @@ body {
     font-size: 16px;
     line-height: 1.5;    
     letter-spacing: 0.02em;    
-    color: #E7E9FC;
+    color: var(--footer-text);
 }
 .footer {
-    background-color:#2E2F42;
+    background-color:var(--background-footer);
 }
 /* =========================/FOOTER=========================*/
 
@@ -171,17 +187,17 @@ body {
 /* =========================PORTFOLIO-NAV=========================*/
 .port-btn:hover,
 .port-btn:focus {
-    background-color: #404BBF;
-    color: var(--header-color);
+    background-color: var(--potfolio-btn-focus-back);
+    color: var(--acent-color);
 }
 .port-btn {
-    background-color: #E7E9FC;
-    color: #4D5AE5;
+    background-color: var(--potfolio-btn-back);
+    color:var(--potfolio-btn-color);
 }
 
 /* =========================/PORTFOLIO-NAV=========================*/
 
 /* =========================PORTFOLIO-STUDIO=========================*/
 .card {
-    color: #E7E9FC;
+    color: var(--portfoli-staff-card);
 }
