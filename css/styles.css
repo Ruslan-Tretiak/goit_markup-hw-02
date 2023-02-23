@@ -1,5 +1,6 @@
 :root {
     --primery-font:'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
     --acent-color:#FFFFFF;
     --title-color:#2E2F42;
     --text-color:#434455;
@@ -42,7 +43,7 @@ body {
 }
 /* =========================COMPONENTS=========================*/
 .logo-component {
-    font-family: 'Raleway',sans-serif;
+    font-family:var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -60,7 +61,7 @@ body {
     color: var(--text-color);
 }
 .btn-component {
-    font-family: 'Roboto', sans-serif;
+    font-family:var(--primery-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
