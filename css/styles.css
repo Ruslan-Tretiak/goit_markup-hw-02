@@ -60,6 +60,13 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
+.conteiner {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 /* =========================COMPONENTS=========================*/
 .logo-component {
     font-family:var(--secondary-font);
@@ -102,13 +109,7 @@ body {
     letter-spacing: 0.02em;
     color:var(--text-color);
 }
-.conteiner {
-    width: 1440px;
-    height: 72px;
-    margin-left: auto;
-    margin-right: auto;
 
-}
 /* =========================/COMPONENTS=========================*/
 
 
@@ -116,8 +117,7 @@ body {
 .logo {  
     margin-left: 156px;
     margin-right: 74px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+
 }
 
 .logo-web { 
@@ -160,6 +160,7 @@ body {
     display: flex;
     align-items: flex-end;
     margin-right: 156px;
+
 }
 
 .address-link {
@@ -169,11 +170,13 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    margin-left: 40px;
 }
 .address-link:hover,
 .address-link:focus {
     color:var(--link-color);
 }
+
 /* ==========================/ADDRESS========================*/
 
 /* ==========================HERO========================*/
@@ -183,7 +186,14 @@ body {
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--acent-color); 
+    color: var(--acent-color);
+    padding-top: 188px;
+    padding-right: 472px;
+    padding-left: 472px;
+}
+
+.hero-text {
+
 }
 .hero-btn {
     background-color:var(--background-btn-hero);
@@ -211,7 +221,7 @@ body {
     color: var(--title-color);
 }
 .team-prof {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.2;    
     text-align: center;
@@ -237,6 +247,9 @@ body {
 }
 .footer {
     background-color:var(--background-footer);
+}
+.logo-component-footer {
+    color: var(--acent-color);
 }
 /* =========================/FOOTER=========================*/
 
