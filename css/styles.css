@@ -192,12 +192,10 @@ body {
     padding-left: 472px;
 }
 
-.hero-text {
-
-}
 .hero-btn {
     background-color:var(--background-btn-hero);
     color: var(--acent-color);
+    display: flex;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -210,6 +208,26 @@ body {
 }
 /* ==========================/HERO========================*/
 
+/* ==========================ABOUT========================*/
+.about-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* ==========================/ABOUT========================*/
+
+
+/* ==========================SERVICES========================*/
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+/* ==========================/SERVICES========================*/
 
 /* =========================TEAM=========================*/
 .team-staff {
@@ -230,6 +248,13 @@ body {
 }
 .team {
     background-color: var(--backgorund-team);
+    
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 .team-card {
     background-color:var(--acent-color);
